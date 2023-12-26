@@ -11,10 +11,12 @@ function App() {
   return (
     <>
     <h1>User Management System</h1>
-    {
-      console.log(users)
-    }
     <h3>Numbers of Users : {users.length}</h3>
+    <div>
+      {
+        users.map(user => <p key = {user.id}>{user.name}</p>)
+      }
+    </div>
     </>
   )
 }
