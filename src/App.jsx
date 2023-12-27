@@ -12,11 +12,11 @@ function App() {
     <>
     <h1>User Management System</h1>
     <h3>Numbers of Users : {users.length}</h3>
-    <div>
-      {
-        users.map(user => <p key = {user.id}>{user.name}</p>)
-      }
-    </div>
+    <form>
+      <input type="text" name="name" placeholder="name" /> <br />
+      <input type="email" name="email" placeholder="email" /> <br />
+      <input type="submit" value="Add User" />
+    </form>
     </>
   )
 }
